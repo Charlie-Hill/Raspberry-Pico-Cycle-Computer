@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.13)
 
 include(pico_sdk_import.cmake)
-
 project(mainfile C CXX ASM)
+
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 set(PICO_BOARD pico_w)
@@ -16,7 +16,6 @@ add_subdirectory(lib/Fonts)
 add_subdirectory(lib/GUI)
 
 # add a header directory
-include_directories(examples)
 include_directories(./lib/Config)
 include_directories(./lib/GUI)
 include_directories(./lib/e-Paper)

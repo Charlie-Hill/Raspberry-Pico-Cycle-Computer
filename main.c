@@ -20,8 +20,14 @@ float read_onboard_temperature() {
 }
 
 
-int main(void) {
+int main() {
     stdio_init_all();
+
+    printf("e-Paper Init and Clear...\r\n");
+	// EPD_2in13_V3_Init();
+    // EPD_2in13_V3_Clear();
+
+    // Paint_Clear(BLACK);
 
     adc_init();
     adc_set_temp_sensor_enabled(true);
